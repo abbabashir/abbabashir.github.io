@@ -1,0 +1,306 @@
+/**************************************/
+/* BELOW 1344PX (Smaller desktops) */
+/**************************************/
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .main-header {
+    padding: 4.4rem 9.6rem;
+  }
+}
+
+/**************************************/
+/* BELOW 1200PX (Landscape tablets) 1200/16 = 75*/
+/**************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/**************************************/
+/* BELOW 944PX (Landscape tablets) 1200/16 = 75*/
+/**************************************/
+
+/* Below 1070PX */
+@media (max-width: 67em) {
+  .offered {
+    margin-top: 2.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .offered {
+    margin-top: 2.8rem;
+  }
+  
+  .services-content {
+    gap: 2rem;
+  }
+
+  .services-text {
+    padding: 2.8rem;
+  }
+  
+  .services-text p {
+    font-size: 1.6rem;
+  }
+  
+  .services-text h2 {
+    font-size: 3.0rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.5rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* transition: all 0.5s; */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/**************************************/
+/* BELOW 700PX (smaller tablets) */
+/**************************************/
+@media (max-width: 44em) {
+
+  .services-content {
+    gap: 2rem;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cinema {
+    grid-column: 1/-1;
+  }
+
+  .quote-text {
+    font-size: 1.6rem;
+    padding: 0 3.0rem;
+  }
+
+  .quote-container img {
+    margin-left: 8.0rem;
+    padding: 1.8rem;
+    width: 30%;
+  }
+
+  .work-heading {
+    font-size: 2.0rem;
+    font-weight: 700;
+  }
+
+  .work-text {
+    font-size: 1.6rem;
+    padding: 0 8.0rem;
+  }
+
+  .work-container {
+    padding: 6.4rem;
+  }
+
+  .abbacodes {
+    font-size: 1.8rem;
+  }
+  
+  .rights {
+    font-size: 1.6rem;
+  }
+}
+
+/*  BELOW 544PX () */
+@media (max-width: 34em) {
+  .services-content {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+  .cinema {
+    grid-column: 1/-1;
+  }
+
+  .quote-text {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.0rem;
+  }
+
+  .quote-container img {
+    margin-left: 6.0rem;
+    padding: 1.6rem;
+    width: 30%;
+  }
+
+  .quote-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .work-heading {
+    font-size: 2.0rem;
+    font-weight: 700;
+  }
+
+  .work-text {
+    font-size: 1.2rem;
+    padding: 0 2.0rem;
+  }
+
+  .work-container {
+    padding: 2.2rem;
+  }
+
+  .btn--set {
+    font-size: 1.6rem;
+  }
+
+  /* FOOTER */
+
+  .abbacodes {
+    font-size: 1.4rem;
+    margin-top: -1.2rem;
+  }
+
+  .foot-icon {
+    margin-right: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer-logo, .down{
+    flex-direction: column;
+    gap: 1rem
+  }
+  
+  .rights {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .side-icons {
+    gap: 1.8rem;
+  }
+}
+
+/*  Fixing Safari flexbox gap */
+/*
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+  
+  .no-flexbox-gap .list-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  
+  .no-flexbox-gap .list-icon:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .delivered-faces {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .meal-attribute:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
+  .no-flexbox-gap .meal-icon {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .footer-row div:not(:last-child) {
+    margin-right: 6.4rem;
+  }
+  
+  .no-flexbox-gap .social-links li:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  
+  .no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  
+  @media (max-width: 75em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 59em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 4.8rem;
+    }
+  }*/
