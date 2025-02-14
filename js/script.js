@@ -43,7 +43,7 @@ allLinks.forEach(function (link) {
     }
 
     // close mobile navigation
-    if (link.classList.contains("main-nav-link"))
+    if (link.classList.contains("nav-links"))
       headerEl.classList.toggle("nav-open");
   });
 });
