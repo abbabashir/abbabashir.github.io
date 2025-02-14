@@ -17,8 +17,12 @@ allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
 
+    // External links action
     const isExternal =
-      href && (href.startsWith("http") || href.startsWith("www"));
+      href &&
+      (href.startsWith("http") ||
+        href.startsWith("mailto") ||
+        href.startsWith("www"));
 
     if (isExternal) {
       return;
