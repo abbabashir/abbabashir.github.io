@@ -15,9 +15,16 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     const href = link.getAttribute("href");
 
+    const isExternal =
+      href && (href.startsWith("http") || href.startsWith("www"));
+
+    if (isExternal) {
+      return;
+    }
+
+    e.preventDefault();
     // Scroll back to top
     if (href === "#")
       window.scrollTo({

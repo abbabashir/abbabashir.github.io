@@ -53,7 +53,7 @@
   .offered {
     margin-top: 2.8rem;
   }
-  
+
   .services-content {
     gap: 2rem;
   }
@@ -61,13 +61,13 @@
   .services-text {
     padding: 2.8rem;
   }
-  
+
   .services-text p {
     font-size: 1.6rem;
   }
-  
+
   .services-text h2 {
-    font-size: 3.0rem;
+    font-size: 3rem;
     margin-bottom: 3.2rem;
     line-height: 1.5rem;
   }
@@ -132,7 +132,6 @@
 /* BELOW 700PX (smaller tablets) */
 /**************************************/
 @media (max-width: 44em) {
-
   .services-content {
     gap: 2rem;
   }
@@ -146,23 +145,23 @@
 
   .quote-text {
     font-size: 1.6rem;
-    padding: 0 3.0rem;
+    padding: 0 3rem;
   }
 
   .quote-container img {
-    margin-left: 8.0rem;
+    margin-left: 8rem;
     padding: 1.8rem;
     width: 30%;
   }
 
   .work-heading {
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 
   .work-text {
     font-size: 1.6rem;
-    padding: 0 8.0rem;
+    padding: 0 8rem;
   }
 
   .work-container {
@@ -172,7 +171,7 @@
   .abbacodes {
     font-size: 1.8rem;
   }
-  
+
   .rights {
     font-size: 1.6rem;
   }
@@ -180,6 +179,9 @@
 
 /*  BELOW 544PX () */
 @media (max-width: 34em) {
+  .main-header {
+    padding: 3rem 3rem;
+  }
   .services-content {
     gap: 2rem;
     grid-template-columns: 1fr;
@@ -194,11 +196,11 @@
 
   .quote-text {
     font-size: 1.4rem;
-    padding: 1.2rem 2.0rem;
+    padding: 1.2rem 2rem;
   }
 
   .quote-container img {
-    margin-left: 6.0rem;
+    margin-left: 6rem;
     padding: 1.6rem;
     width: 30%;
   }
@@ -208,14 +210,20 @@
     text-align: center;
   }
 
+  /* WORK SECTION */
+
+  .work-main-container {
+    padding: 2.2rem 3rem;
+  }
+
   .work-heading {
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 
   .work-text {
     font-size: 1.2rem;
-    padding: 0 2.0rem;
+    padding: 0 2rem;
   }
 
   .work-container {
@@ -230,27 +238,33 @@
 
   .abbacodes {
     font-size: 1.4rem;
-    margin-top: -1.2rem;
+    margin-top: -1.4rem;
+    display: none;
   }
 
   .foot-icon {
     margin-right: 1.2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 4.4rem;
+    height: 4.4rem;
   }
 
-  .footer-logo, .down{
+  .down {
     flex-direction: column;
-    gap: 1rem
+    gap: 1rem;
   }
-  
+
   .rights {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   .side-icons {
-    gap: 1.8rem;
+    gap: 1.2rem;
+  }
+
+  .side-items {
+    width: 2rem;
+    height: 2rem;
   }
 }
 

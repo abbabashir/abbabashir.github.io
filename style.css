@@ -67,6 +67,7 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   color: #1d1d1d;
+  overflow-x: hidden;
 }
 
 nav {
@@ -153,6 +154,13 @@ a {
   font-size: 1.8rem;
   margin-top: 1.8rem;
   line-height: 1.5;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 .icon {
@@ -357,7 +365,6 @@ button:hover {
   padding: 1.2rem 4.4rem;
   background-color: #fafafa;
   margin-top: 4.4rem;
-
 }
 
 .footer-logo {
