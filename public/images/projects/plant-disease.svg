@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plantBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060c07" />
+      <stop offset="100%" stop-color="#0d1b11" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#plantBg)" />
+  <circle cx="400" cy="250" r="180" fill="#22c55e" opacity="0.08" filter="blur(50px)" />
+  
+  <!-- Stylized Leaf Specimen with Bounding Box -->
+  <g transform="translate(260, 100)">
+    <!-- Bounding Detection Box -->
+    <rect width="280" height="280" rx="8" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
+    <!-- Corner brackets -->
+    <path d="M -5 20 L -5 -5 L 20 -5" fill="none" stroke="#4ade80" stroke-width="3" />
+    <path d="M 285 20 L 285 -5 L 260 -5" fill="none" stroke="#4ade80" stroke-width="3" />
+    <path d="M -5 260 L -5 285 L 20 285" fill="none" stroke="#4ade80" stroke-width="3" />
+    <path d="M 285 260 L 285 285 L 260 285" fill="none" stroke="#4ade80" stroke-width="3" />
+
+    <!-- Leaf Shape -->
+    <path d="M 140 30 C 230 60, 240 180, 140 250 C 40 180, 50 60, 140 30 Z" fill="#14532d" stroke="#22c55e" stroke-width="2" />
+    <path d="M 140 30 L 140 250" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 140 80 Q 180 110, 210 120" stroke="#4ade80" stroke-width="1" fill="none" />
+    <path d="M 140 120 Q 90 150, 70 170" stroke="#4ade80" stroke-width="1" fill="none" />
+    <path d="M 140 160 Q 190 190, 210 200" stroke="#4ade80" stroke-width="1" fill="none" />
+
+    <!-- Tag -->
+    <rect x="15" y="-14" width="160" height="26" rx="4" fill="#15803d" />
+    <text x="25" y="4" fill="#ffffff" font-family="system-ui" font-size="11" font-weight="bold">EARLY BLIGHT (96.4%)</text>
+  </g>
+
+  <!-- Metrics HUD Floating -->
+  <g transform="translate(100, 360)">
+    <rect width="200" height="70" rx="10" fill="#052e16" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1" />
+    <text x="20" y="28" fill="#86efac" font-family="system-ui" font-size="11">MODEL INFERENCE</text>
+    <text x="20" y="52" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold">18.4ms / Frame</text>
+  </g>
+
+  <g transform="translate(500, 360)">
+    <rect width="200" height="70" rx="10" fill="#052e16" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1" />
+    <text x="20" y="28" fill="#86efac" font-family="system-ui" font-size="11">CATEGORIES CLASSIFIED</text>
+    <text x="20" y="52" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold">38+ Pathologies</text>
+  </g>
+</svg>

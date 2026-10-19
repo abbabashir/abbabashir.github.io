@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="posBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0d" />
+      <stop offset="100%" stop-color="#18151f" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#posBg)" />
+  <circle cx="650" cy="200" r="160" fill="#a855f7" opacity="0.08" filter="blur(50px)" />
+  
+  <!-- POS Tablet Interface Mockup -->
+  <g transform="translate(120, 90)">
+    <rect width="560" height="320" rx="14" fill="#0f0f15" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+    <!-- Header -->
+    <rect width="560" height="48" rx="14" fill="#181822" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="46" cy="24" r="6" fill="#eab308" />
+    <circle cx="64" cy="24" r="6" fill="#22c55e" />
+    <text x="100" y="28" fill="#e2e8f0" font-family="system-ui" font-size="13" font-weight="600">Em &amp; Essence POS — Store #01 [OFFLINE SYNC ACTIVE]</text>
+    <rect x="440" y="14" width="90" height="22" rx="11" fill="#22c55e" fill-opacity="0.2" />
+    <text x="485" y="29" fill="#4ade80" font-family="system-ui" font-size="10" text-anchor="middle" font-weight="bold">INDEXEDDB OK</text>
+    
+    <!-- Left Column: Products -->
+    <g transform="translate(24, 68)">
+      <rect width="320" height="56" rx="8" fill="#1a1a26" stroke="#ffffff" stroke-opacity="0.05" />
+      <text x="16" y="26" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="500">Hydro-Moisture Serum 50ml</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="system-ui" font-size="11">SKU: 92834-EM • In Stock (142)</text>
+      <text x="300" y="34" fill="#a855f7" font-family="system-ui" font-size="13" font-weight="bold" text-anchor="end">₦14,500</text>
+
+      <rect y="68" width="320" height="56" rx="8" fill="#1a1a26" stroke="#ffffff" stroke-opacity="0.05" />
+      <text x="16" y="94" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="500">Velvet Matte Lip Tint #04</text>
+      <text x="16" y="112" fill="#94a3b8" font-family="system-ui" font-size="11">SKU: 77201-EM • In Stock (89)</text>
+      <text x="300" y="102" fill="#a855f7" font-family="system-ui" font-size="13" font-weight="bold" text-anchor="end">₦6,200</text>
+      
+      <rect y="136" width="320" height="56" rx="8" fill="#1a1a26" stroke="#ffffff" stroke-opacity="0.05" />
+      <text x="16" y="162" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="500">Rosewater Hydrating Mist</text>
+      <text x="16" y="180" fill="#94a3b8" font-family="system-ui" font-size="11">SKU: 41098-EM • In Stock (210)</text>
+      <text x="300" y="170" fill="#a855f7" font-family="system-ui" font-size="13" font-weight="bold" text-anchor="end">₦8,900</text>
+    </g>
+
+    <!-- Right Column: Cart summary -->
+    <g transform="translate(365, 68)">
+      <rect width="170" height="225" rx="8" fill="#14141e" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1" />
+      <text x="16" y="28" fill="#94a3b8" font-family="system-ui" font-size="11">TOTAL PAYABLE</text>
+      <text x="16" y="58" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="bold">₦29,600</text>
+      <line x1="16" y1="78" x2="154" y2="78" stroke="#ffffff" stroke-opacity="0.1" />
+      <text x="16" y="100" fill="#94a3b8" font-family="system-ui" font-size="11">Items: 3</text>
+      <text x="16" y="122" fill="#94a3b8" font-family="system-ui" font-size="11">Tax: ₦0 (Exempt)</text>
+      <rect x="16" y="160" width="138" height="40" rx="6" fill="#9333ea" />
+      <text x="85" y="184" fill="#ffffff" font-family="system-ui" font-size="12" font-weight="bold" text-anchor="middle">COMPLETE ORDER</text>
+    </g>
+  </g>
+</svg>
