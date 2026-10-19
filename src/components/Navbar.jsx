@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 const NAV_LINKS = [
   { name: 'Work', href: '#projects' },
@@ -8,10 +8,11 @@ const NAV_LINKS = [
   { name: 'Communities', href: '#communities' },
 ];
 
-export default function Navbar({ isDark, onToggleTheme }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +42,8 @@ export default function Navbar({ isDark, onToggleTheme }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
-        ? 'py-3 bg-black/70 dark:bg-black/80 backdrop-blur-xl border-b border-white/[0.08] dark:border-white/[0.08] shadow-2xl shadow-black/50'
-        : 'py-5 bg-transparent'
+          ? 'py-3 bg-black/70 dark:bg-black/80 backdrop-blur-xl border-b border-white/[0.08] dark:border-white/[0.08] shadow-2xl shadow-black/50'
+          : 'py-5 bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -71,8 +72,8 @@ export default function Navbar({ isDark, onToggleTheme }) {
                 key={link.name}
                 href={link.href}
                 className={`relative px-4 py-1.5 text-xs font-medium tracking-wide transition-all duration-200 rounded-full ${isActive
-                  ? 'text-white bg-white/10 dark:bg-white/10 font-semibold shadow-sm'
-                  : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                    ? 'text-white bg-white/10 dark:bg-white/10 font-semibold shadow-sm'
+                    : 'text-zinc-400 hover:text-white hover:bg-white/5'
                   }`}
               >
                 {link.name}
@@ -83,15 +84,6 @@ export default function Navbar({ isDark, onToggleTheme }) {
 
         {/* Right: Actions */}
         <div className="flex items-center gap-2.5">
-          {/* Theme Switcher */}
-          <button
-            // onClick={onToggleTheme}
-            // aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="p-2 rounded-full text-zinc-400 hover:text-white bg-zinc-900/60 hover:bg-zinc-800/80 border border-white/10 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-          >
-            {/* {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-zinc-300" />} */}
-          </button>
-
           {/* Contact Me CTA */}
           <a
             href="#contact"

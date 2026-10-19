@@ -16,33 +16,15 @@ import Footer from './section/Footer';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window === 'undefined') return true;
-    const saved = localStorage.getItem('theme');
-    if (saved) return saved === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
-  });
 
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-      document.documentElement.classList.remove('light');
-    } else {
-      document.documentElement.classList.add('light');
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDark]);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const nextTheme = !prev;
-      localStorage.setItem('theme', nextTheme ? 'dark' : 'light');
-      return nextTheme;
-    });
-  };
+    document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('light');
+    localStorage.removeItem('theme');
+  }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#000000] text-zinc-100 transition-colors duration-300">
+    <div className="relative min-h-screen bg-[#000000] text-zinc-100">
       {/* Initial Minimal Loader */}
       {loading && <Loader onFinish={() => setLoading(false)} />}
 
@@ -50,7 +32,7 @@ export default function App() {
       <CustomCursor />
 
       {/* Sticky Blurred Navbar */}
-      <Navbar isDark={isDark} onToggleTheme={toggleTheme} />
+      <Navbar />
 
       {/* Main Content Experience */}
       <main className="relative z-10">
