@@ -1,20 +1,20 @@
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/BashirAliyu",
-    username: "@BashirAliyu",
+    url: "https://github.com/abbabashir",
+    username: "@abbabashir",
     icon: "Github"
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/bashir-aliyu",
+    url: "https://www.linkedin.com/in/bashir-aliyu-564970403/",
     username: "Bashir Aliyu",
     icon: "Linkedin"
   },
   {
     name: "X (Twitter)",
-    url: "https://x.com/BashirAliyu",
-    username: "@BashirAliyu",
+    url: "https://x.com/abbacodes",
+    username: "@abbacodes",
     icon: "Twitter"
   },
   {

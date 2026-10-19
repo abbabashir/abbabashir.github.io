@@ -12,9 +12,9 @@ export default function Projects() {
 
   const filteredProjects = projectsData.filter((project) => {
     if (selectedFilter === 'All') return true;
-    if (selectedFilter === 'Fintech') return project.category.includes('Fintech');
+    if (selectedFilter === 'Fintech') return project.category.includes('Fintech') || project.category.includes('Trade') || project.category.includes('Commerce');
     if (selectedFilter === 'AI/ML') return project.category.includes('AI') || project.category.includes('Vision') || project.category.includes('Machine Learning');
-    if (selectedFilter === 'Full-Stack') return project.category.includes('Retail') || project.category.includes('Web') || project.category.includes('Platform');
+    if (selectedFilter === 'Full-Stack') return project.category.includes('Retail') || project.category.includes('Web') || project.category.includes('Platform') || project.category.includes('Trade') || project.category.includes('Commerce');
     if (selectedFilter === 'Mobile') return project.technologies.includes('Flutter') || project.technologies.includes('Android');
     return true;
   });

@@ -23,7 +23,7 @@ export const testimonialsData = [
     role: "Lead Product Manager",
     organization: "Fintech Systems Lab",
     avatar: "/images/profile/avatar-3.svg",
-    quote: "On Paychipa, Bashir solved concurrency and ledger reconciliation challenges that had previously stalled our release. He thinks like a product builder, not just a task-completer.",
+    quote: "On Afro Market Connect, Bashir solved concurrency and multi-vendor escrow reconciliation challenges that had previously stalled our release. He thinks like a product builder, not just a task-completer.",
     relation: "Product Collaborator"
   },
   {

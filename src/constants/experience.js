@@ -9,7 +9,7 @@ export const experienceData = [
     current: true,
     description: "Architecting end-to-end full-stack applications, AI/ML inference pipelines, and enterprise software for fintech and commerce clients.",
     highlights: [
-      "Built Paychipa digital wallet backend with Spring Boot, PostgreSQL, and high-security transaction authorization.",
+      "Built Afro Market Connect digital marketplace and escrow backend with Spring Boot, PostgreSQL, and high-security transaction authorization.",
       "Engineered retail POS and ERP systems with offline-first IndexedDB replication across multi-store locations.",
       "Implemented computer vision disease classification models achieving 96.4% diagnostic accuracy."
     ],

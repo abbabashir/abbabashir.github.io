@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-forest: #1A4D3A;
+  --primary-forest-dark: #13382A;
+  --accent-terracotta: #CC5500;
+  --accent-gold: #FFD700;
+  --canvas: #FDF6E3;
+  --surface: #FFFFFF;
+  --text-charcoal: #333333;
+  --text-muted: #555555;
+  --border-warm: #E2D9C8;
+
+  /* Theme mappings */
+  --primary-blue: #1A4D3A;
+  --primary-blue-dark: #13382A;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--text-charcoal);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Roboto", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Low-Bandwidth Mode Optimizations */
+.low-bandwidth img {
+  filter: contrast(1.05);
+}
+
+.low-bandwidth * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ebd8;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus rings for WCAG 2.1 AA accessibility in Primary Forest Green */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #1A4D3A;
+  outline-offset: 2px;
+}
+
+/* Brand badge pulse */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.82; }
+}
+
+.animate-subtle-pulse {
+  animation: subtlePulse 2.5s infinite ease-in-out;
+}
