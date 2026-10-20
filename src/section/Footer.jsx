@@ -16,7 +16,6 @@ export default function Footer() {
             <span className="font-mono text-xl font-black tracking-widest text-white">
               BASHIR ALIYU
             </span>
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
           </div>
           <p className="text-xs sm:text-sm text-zinc-400">
             Software Developer • AI/ML Engineer • Full-Stack Developer • Community Builder

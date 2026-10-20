@@ -52,7 +52,6 @@ export default function SoftSkills() {
               </div>
 
               <div className="pt-6 mt-6 border-t border-white/[0.04] flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 opacity-60 group-hover:opacity-100" />
                 <span className="text-[11px] font-mono text-zinc-500">
                   Core Engineering Value
                 </span>

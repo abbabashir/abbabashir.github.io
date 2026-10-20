@@ -42,7 +42,6 @@ export default function TimelineItem({ item, isLast }) {
             </span>
             {item.current && (
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-200 border border-blue-400/30 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
                 Current Role
               </span>
             )}

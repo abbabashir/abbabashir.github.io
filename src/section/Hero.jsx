@@ -61,7 +61,6 @@ export default function Hero() {
             ref={badgeRef}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 rounded-full bg-zinc-900/80 border border-white/10 backdrop-blur-md"
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs font-mono text-zinc-300">
               Available for New Engineering Opportunities
             </span>

@@ -238,7 +238,6 @@ export default function Skills3DCanvas() {
 
       {/* Guide Pill */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-zinc-900/80 border border-white/5 backdrop-blur-sm pointer-events-none text-[10px] font-mono text-zinc-400 flex items-center gap-1.5">
-        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
         Interactive 3D Constellation • Drag to rotate • Hover node to inspect
       </div>
     </div>

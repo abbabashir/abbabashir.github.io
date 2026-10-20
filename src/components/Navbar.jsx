@@ -55,7 +55,6 @@ export default function Navbar() {
           <span className="font-mono text-lg font-black tracking-widest text-zinc-100 group-hover:text-blue-400 transition-colors">
             BASHIR
           </span>
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-500 group-hover:scale-150 transition-transform" />
         </a>
 
         {/* Center: Desktop Nav */}
