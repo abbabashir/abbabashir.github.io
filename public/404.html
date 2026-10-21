@@ -4,7 +4,14 @@
     <meta charset="utf-8" />
     <title>Bashir Aliyu — Portfolio</title>
     <script>
-      window.location.replace('/');
+      // Single Page redirect for GitHub Pages (preserves hashes and search params)
+      var l = window.location;
+      var repoBase = l.pathname.split('/')[1];
+      // For username.github.io sites or custom domains, redirect to root; for subpath repos, keep subpath
+      var redirectPath = (repoBase && repoBase !== 'index.html' && !repoBase.includes('.')) 
+        ? '/' + repoBase + '/' 
+        : '/';
+      window.location.replace(redirectPath + (l.search || '') + (l.hash || ''));
     </script>
   </head>
   <body>

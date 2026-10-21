@@ -10,7 +10,7 @@ export const communitiesData = [
     badge: "Leadership",
     category: "Campus Leadership",
     colSpan: "lg:col-span-7",
-    image: "/images/placeholders/community-gdsc.svg"
+    image: "./images/placeholders/community-gdsc.svg"
   },
   {
     id: "gdg-minna",
@@ -23,7 +23,7 @@ export const communitiesData = [
     badge: "Community Co-Lead",
     category: "Tech Ecosystem",
     colSpan: "lg:col-span-5",
-    image: "/images/placeholders/community-gdg.svg"
+    image: "./images/placeholders/community-gdg.svg"
   },
   {
     id: "devfest",
@@ -36,7 +36,7 @@ export const communitiesData = [
     badge: "Keynote Speaker",
     category: "Conferences",
     colSpan: "lg:col-span-4",
-    image: "/images/placeholders/community-devfest.svg"
+    image: "./images/placeholders/community-devfest.svg"
   },
   {
     id: "google-io",
@@ -49,7 +49,7 @@ export const communitiesData = [
     badge: "Facilitator",
     category: "Developer Events",
     colSpan: "lg:col-span-4",
-    image: "/images/placeholders/community-io.svg"
+    image: "./images/placeholders/community-io.svg"
   },
   {
     id: "mentorship",
@@ -62,6 +62,6 @@ export const communitiesData = [
     badge: "Mentorship",
     category: "Community Impact",
     colSpan: "lg:col-span-4",
-    image: "/images/placeholders/community-mentorship.svg"
+    image: "./images/placeholders/community-mentorship.svg"
   }
 ];
