@@ -23,7 +23,7 @@ export const projectsData = [
     technologies: ["Python", "PyTorch", "NLP", "Whisper", "FastAPI", "Docker"],
     image: "/images/projects/veta-origin.svg",
     github: "https://github.com/abbabashir",
-    live: "https://veta-origin.ai",
+    live: "https://vetaorigin.net",
     caseStudy: "#",
     featured: true,
     colSpan: "lg:col-span-4",
