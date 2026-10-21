@@ -7,23 +7,28 @@ export default function Loader({ onFinish }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => {
-            setIsFading(true);
-            setTimeout(() => {
-              if (onFinish) onFinish();
-            }, 600);
-          }, 200);
-          return 100;
-        }
+        if (prev >= 100) return 100;
         const diff = Math.random() * 25 + 10;
         return Math.min(100, Math.floor(prev + diff));
       });
     }, 60);
 
     return () => clearInterval(interval);
-  }, [onFinish]);
+  }, []);
+
+  useEffect(() => {
+    if (progress >= 100) {
+      const timer = setTimeout(() => {
+        setIsFading(true);
+        const finishTimer = setTimeout(() => {
+          if (onFinish) onFinish();
+        }, 600);
+        return () => clearTimeout(finishTimer);
+      }, 200);
+
+      return () => clearTimeout(timer);
+    }
+  }, [progress, onFinish]);
 
   return (
     <div

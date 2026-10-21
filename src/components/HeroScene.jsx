@@ -258,8 +258,8 @@ export default function HeroScene() {
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('resize', onResize);
 
-      if (container && renderer.domElement) {
-        container.removeChild(renderer.domElement);
+      if (renderer?.domElement) {
+        renderer.domElement.remove();
       }
 
       baseGeo.dispose();

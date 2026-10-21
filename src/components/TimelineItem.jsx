@@ -2,6 +2,7 @@ import React from 'react';
 import { Briefcase, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export default function TimelineItem({ item, isLast }) {
+  if (!item) return null;
   const isWork = item.type === 'WORK';
 
   return (

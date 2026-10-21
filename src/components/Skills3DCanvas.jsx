@@ -199,8 +199,8 @@ export default function Skills3DCanvas() {
       window.removeEventListener('pointerup', onPointerUp);
       window.removeEventListener('resize', onResize);
 
-      if (mount && renderer.domElement) {
-        mount.removeChild(renderer.domElement);
+      if (renderer?.domElement) {
+        renderer.domElement.remove();
       }
 
       coreGeo.dispose();

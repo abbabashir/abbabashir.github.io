@@ -16,11 +16,12 @@ export default function Experience() {
     educationData[1],  // 2021 - 2023 (GDSC Lead)
     educationData[0],  // 2018 - 2023 (IBBU Computer Science)
     experienceData[2], // 2018 - 2021 (Java Desktop Systems)
-  ];
+  ].filter(Boolean);
 
   const displayedItems = combinedTimeline.filter((item) => {
+    if (!item) return false;
     if (activeTab === 'WORK') return item.type === 'WORK';
-    if (activeTab === 'EDUCATION') return item.type === 'EDUCATION' || item.type.includes('LEADERSHIP');
+    if (activeTab === 'EDUCATION') return item.type === 'EDUCATION' || item.type?.includes('LEADERSHIP');
     return true;
   });
 
